@@ -56,6 +56,9 @@ function addToDo() {
     // Lägg till klickhanterare för att ta bort det nya elementet
     newEl.addEventListener("click", function (e) {
         e.target.remove();
+        
+    // Anropa lagring
+        saveStorage();
     });
 
     // Radera input-fältet
